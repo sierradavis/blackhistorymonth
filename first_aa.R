@@ -4,6 +4,7 @@ library(ggimage)
 library(rvest)
 library(showtext)
 font_add_google(name = "Rowdies")
+showtext_auto()
 
 asp_ratio <- 1.618 
 
