@@ -131,7 +131,7 @@ firsts <- final_df %>%
   mutate_at(c("gender", "category"), as.factor) %>% 
   mutate(decade = year - year %% 10)
 
-
+write.csv(firsts, "first_aa_achievements.csv")
 
 first_plot<-firsts %>% 
   filter(category != "NA") %>% 
