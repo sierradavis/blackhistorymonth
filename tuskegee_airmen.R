@@ -53,7 +53,7 @@ final_plot<-state_plot +
   scale_color_manual(name="TOTAL AIRMEN",values = c("#000000","#dc143c","#00aa00","#ffd700")) +
   theme(text = element_text(family = "sans"), 
         plot.title = element_text(size = 18, hjust = 0.5, face = "bold"),
-        plot.caption = element_text(size=8, hjust=0.5),
+        plot.caption = element_text(size=11, hjust=0.5),
         legend.position = "bottom",
         plot.background = element_rect(fill = "#d2b48c"),
         panel.background = element_rect(fill = "#d2b48c",
@@ -63,7 +63,7 @@ final_plot<-state_plot +
   labs(title = "HOMETOWNS OF TUSKEGEE AIRMEN ACROSS THE \nUNITED STATES", 
        caption = "Source - #DuBoisChallenge2022 & #TidyTuesday | plot by: @__sierradavis")
 
-ggsave("tuskegee_airmen.png", final_plot,dpi = 300, height = 7, width = 11)
+ggsave("tuskegee_airmen_final.png", final_plot,dpi = 300, height = 7, width = 11)
 
 
 
